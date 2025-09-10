@@ -1,55 +1,48 @@
 Validador de Tokens con Expresiones Regulares
+
 📋 Descripción
+
 Sistema de validación de patrones en cadenas de texto utilizando expresiones regulares en Python. El sistema es capaz de identificar y clasificar diferentes tipos de tokens como correos electrónicos, identificadores, números, contraseñas, palabras reservadas y operadores.
 
 ✨ Características
-✅ Validación de 8 tipos diferentes de tokens mediante expresiones regulares
 
-📁 Procesamiento de archivos de texto con múltiples tokens
-
-💻 Modo interactivo para validación individual
-
-📊 Reportes estadísticos de validación
-
-🖥️ Interfaz de línea de comandos amigable
+-✅ Validación de 8 tipos diferentes de tokens mediante expresiones regulares
+-📁 Procesamiento de archivos de texto con múltiples tokens
+-💻 Modo interactivo para validación individual
+-📊 Reportes estadísticos de validación
+-🖥️ Interfaz de línea de comandos amigable
 
 🎯 Tipos de Tokens Reconocidos
-EMAIL: Direcciones de correo electrónico válidas
 
-IDENTIFIER: Identificadores de variables (comienzan con letra o guión bajo)
-
-NUMBER: Números enteros y decimales con signo opcional
-
-PASSWORD: Contraseñas seguras (8+ caracteres, mayúscula, minúscula, número y carácter especial)
-
-RESERVED_WORD: Palabras reservadas (if, else, while, for, return)
-
-LOGICAL_OPERATOR: Operadores lógicos (&&, ||, !)
-
-ARITHMETIC_OPERATOR: Operadores aritméticos (+, -, *, /, %, **)
-
-RELATIONAL_OPERATOR: Operadores relacionales (==, !=, <, >, <=, >=)
+1.EMAIL: Direcciones de correo electrónico válidas
+2.IDENTIFIER: Identificadores de variables (comienzan con letra o guión bajo)
+3.NUMBER: Números enteros y decimales con signo opcional
+4.PASSWORD: Contraseñas seguras (8+ caracteres, mayúscula, minúscula, número y carácter especial)
+5.RESERVED_WORD: Palabras reservadas (if, else, while, for, return)
+6.LOGICAL_OPERATOR: Operadores lógicos (&&, ||, !)
+7.ARITHMETIC_OPERATOR: Operadores aritméticos (+, -, *, /, %, **)
+8.RELATIONAL_OPERATOR: Operadores relacionales (==, !=, <, >, <=, >=)
 
 📋 Requisitos
-Python 3.6 o superior
-
-No se requieren librerías externas (utiliza sólo módulos estándar de Python)
+-Python 3.6 o superior
+-No se requieren librerías externas (utiliza sólo módulos estándar de Python)
 
 🔧 Instalación
 bash
 # Clona o descarga el repositorio
-git clone https://github.com/tu-usuario/taller1-info1148.git
-
+git clone https://github.com/blosttt/taller1-info1148.git
 # Navega al directorio del proyecto
 cd taller1-info1148
 El proyecto no requiere instalación adicional.
 
 🚀 Uso
+
 Modo archivo
 Procesa un archivo de texto con tokens (uno por línea):
 
 bash
 python token_validator.py archivo_tokens.txt
+
 Modo interactivo
 Ejecuta el programa sin argumentos para acceder al menú interactivo:
 
@@ -57,14 +50,11 @@ bash
 python token_validator.py
 Opciones disponibles:
 
-Validar un archivo de texto
-
-Validar un token individual
-
-Salir
+1.Validar un archivo de texto
+2.Validar un token individual
+3.Salir
 
 Ejemplos de uso
-python
 # Ejemplo de uso directo desde Python
 from token_validator import TokenValidator
 
@@ -73,44 +63,38 @@ resultado = validator.validate_single_token("usuario@example.com")
 print(resultado)  # Output: True (EMAIL)
 
 tokens = validator.process_file("tokens.txt")
+
 📁 Estructura del Proyecto
-text
+
 taller1-info1148/
 ├── token_validator.py  # Código principal del validador
 ├── tokens.txt          # Archivo de ejemplo con tokens para validar
 ├── README.md           # Este archivo
 └── requirements.txt    # Dependencias (vacío o con librerías si se añaden)
+
 🧩 Expresiones Regulares Implementadas
-EMAIL: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
-
-IDENTIFIER: ^[a-zA-Z_][a-zA-Z0-9_]*$
-
-NUMBER: ^-?\d+(\.\d+)?$
-
-PASSWORD: ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$
-
-RESERVED_WORD: ^(if|else|while|for|return)$
-
-LOGICAL_OPERATOR: ^(&&|\|\||!)$
-
-ARITHMETIC_OPERATOR: ^(\+|-|\*|/|%|\*\*)$
-
-RELATIONAL_OPERATOR: ^(==|!=|<|>|<=|>=)$
+1.EMAIL: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+2.IDENTIFIER: ^[a-zA-Z_][a-zA-Z0-9_]*$
+3.NUMBER: ^-?\d+(\.\d+)?$
+4.PASSWORD: ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$
+5.RESERVED_WORD: ^(if|else|while|for|return)$
+6.LOGICAL_OPERATOR: ^(&&|\|\||!)$
+7.ARITHMETIC_OPERATOR: ^(\+|-|\*|/|%|\*\*)$
+8.RELATIONAL_OPERATOR: ^(==|!=|<|>|<=|>=)$
 
 📝 Formato del Archivo de Entrada
 El archivo de entrada debe ser un archivo de texto plano con un token por línea:
-
-text
 usuario@example.com
 12345
 Password123!
 if
 &&
 ==
+
 📊 Salida del Programa
+
 El programa muestra una tabla con los resultados de la validación:
 
-text
 ============================================================
 RESULTADOS DE VALIDACIÓN DE TOKENS
 ============================================================
@@ -127,16 +111,19 @@ Total tokens: 6
 Tokens válidos: 6
 Tokens inválidos: 0
 ============================================================
+
 Además, genera un reporte estadístico con la distribución de tokens por tipo.
 
+
 🔧 Personalización
+
 Para agregar nuevos tipos de tokens, modifica el diccionario patterns en la clase TokenValidator:
 
-python
 self.patterns = {
     'NUEVO_TOKEN': r'^expresión_regular$',
     # ... otros tokens
 }
+
 🧪 Pruebas
 El proyecto incluye un archivo tokens.txt con más de 70 ejemplos de tokens válidos e inválidos para pruebas. Se recomienda verificar el funcionamiento con este archivo antes de usar el validador con datos propios.
 
@@ -147,30 +134,6 @@ El rendimiento puede disminuir con archivos muy grandes (>10,000 tokens)
 
 No se soportan tokens multi-línea
 
-🤝 Contribuciones
-Las contribuciones son bienvenidas. Para ello:
-
-Haz un fork del proyecto
-
-Crea una rama para tu feature (git checkout -b feature/nueva-feature)
-
-Commit tus cambios (git commit -am 'Agrega nueva feature')
-
-Push a la rama (git push origin feature/nueva-feature)
-
-Abre un Pull Request
-
-📄 Licencia
-Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
-
 👥 Autor
-Desarrollado por Juan Pérez, María González, Carlos López para el Taller 1 de INFO1148 - Teoría de la Computación, Semestre II-2025.
+Desarrollado por Benjmain Sobarzo, Kevin Cortes, Jonthan Huinca para el Taller 1 de INFO1148 - Teoría de la Computación, Semestre II-2025.
 
-📧 Contacto
-Para dudas o sugerencias, contactar a:
-
-juan.perez@email.com
-
-maria.gonzalez@email.com
-
-carlos.lopez@email.com
