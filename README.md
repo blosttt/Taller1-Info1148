@@ -72,50 +72,27 @@ taller1-info1148/
 ├── README.md           # Este archivo
 └── requirements.txt    # Dependencias (vacío o con librerías si se añaden)
 
-🧩 Expresiones Regulares Implementadas
-1.EMAIL: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
-2.IDENTIFIER: ^[a-zA-Z_][a-zA-Z0-9_]*$
-3.NUMBER: ^-?\d+(\.\d+)?$
-4.PASSWORD: ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$
-5.RESERVED_WORD: ^(if|else|while|for|return)$
-6.LOGICAL_OPERATOR: ^(&&|\|\||!)$
-7.ARITHMETIC_OPERATOR: ^(\+|-|\*|/|%|\*\*)$
-8.RELATIONAL_OPERATOR: ^(==|!=|<|>|<=|>=)$
+🧩 Expresiones Regulares Implementadas:
+1.EMAIL: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$,
+2.IDENTIFIER: ^[a-zA-Z_][a-zA-Z0-9_]*$,
+3.NUMBER: ^-?\d+(\.\d+)?$,
+4.PASSWORD: ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$,
+5.RESERVED_WORD: ^(if|else|while|for|return)$,
+6.LOGICAL_OPERATOR: ^(&&|\|\||!)$,
+7.ARITHMETIC_OPERATOR: ^(\+|-|\*|/|%|\*\*)$,
+8.RELATIONAL_OPERATOR: ^(==|!=|<|>|<=|>=)$,
 
-📝 Formato del Archivo de Entrada
+📝 Formato del Archivo de Entrada:
 El archivo de entrada debe ser un archivo de texto plano con un token por línea:
 usuario@example.com
 12345
 Password123!
 if
 &&
-==
-
-📊 Salida del Programa
-
-El programa muestra una tabla con los resultados de la validación:
-
-============================================================
-RESULTADOS DE VALIDACIÓN DE TOKENS
-============================================================
-LÍNEA  TOKEN                    TIPO                 VÁLIDO
-------------------------------------------------------------
-1      usuario@example.com      EMAIL                SÍ
-2      12345                    NUMBER               SÍ
-3      Password123!             PASSWORD             SÍ
-4      if                       RESERVED_WORD        SÍ
-5      &&                       LOGICAL_OPERATOR     SÍ
-6      ==                       RELATIONAL_OPERATOR  SÍ
-------------------------------------------------------------
-Total tokens: 6
-Tokens válidos: 6
-Tokens inválidos: 0
-============================================================
-
-Además, genera un reporte estadístico con la distribución de tokens por tipo.
+==.
 
 
-🔧 Personalización
+🔧 Personalización:
 
 Para agregar nuevos tipos de tokens, modifica el diccionario patterns en la clase TokenValidator:
 
@@ -124,15 +101,15 @@ self.patterns = {
     # ... otros tokens
 }
 
-🧪 Pruebas
+🧪 Pruebas:
 El proyecto incluye un archivo tokens.txt con más de 70 ejemplos de tokens válidos e inválidos para pruebas. Se recomienda verificar el funcionamiento con este archivo antes de usar el validador con datos propios.
 
-⚠️ Limitaciones
-Las expresiones regulares para contraseñas y correos electrónicos pueden no cubrir todos los casos posibles según estándares actualizados
+⚠️ Limitaciones:
+Las expresiones regulares para contraseñas y correos electrónicos pueden no cubrir todos los casos posibles según estándares actualizados,
 
-El rendimiento puede disminuir con archivos muy grandes (>10,000 tokens)
+El rendimiento puede disminuir con archivos muy grandes (>10,000 tokens),
 
-No se soportan tokens multi-línea
+No se soportan tokens multi-línea,
 
 👥 Autor
 Desarrollado por Benjmain Sobarzo, Kevin Cortes, Jonthan Huinca para el Taller 1 de INFO1148 - Teoría de la Computación, Semestre II-2025.
