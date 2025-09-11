@@ -66,11 +66,11 @@ tokens = validator.process_file("tokens.txt")
 
 ## 📁 Estructura del Proyecto
 
-taller1-info1148/
-├── token_validator.py  # Código principal del validador
-├── tokens.txt          # Archivo de ejemplo con tokens para validar
-├── README.md           # Este archivo
-└── requirements.txt    # Dependencias (vacío o con librerías si se añaden)
+# taller1-info1148/
+# ├── token_validator.py  # Código principal del validador
+# ├── tokens.txt          # Archivo de ejemplo con tokens para validar
+# ├── README.md           # Este archivo
+# └── requirements.txt    # Dependencias (vacío o con librerías si se añaden)
 
 ## 🧩 Expresiones Regulares Implementadas:
 1. EMAIL: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$,
