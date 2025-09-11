@@ -1,10 +1,10 @@
-#/Validador de Tokens con Expresiones Regulares
+## Validador de Tokens con Expresiones Regulares
 
-#Descripción:
+# Descripción:
 
 Sistema de validación de patrones en cadenas de texto utilizando expresiones regulares en Python. El sistema es capaz de identificar y clasificar diferentes tipos de tokens como correos electrónicos, identificadores, números, contraseñas, palabras reservadas y operadores.
 
-##✨ Características:
+## ✨ Características:
 
 -✅ Validación de 8 tipos diferentes de tokens mediante expresiones regulares,
 -📁 Procesamiento de archivos de texto con múltiples tokens,
@@ -12,7 +12,7 @@ Sistema de validación de patrones en cadenas de texto utilizando expresiones re
 -📊 Reportes estadísticos de validación,
 -🖥️ Interfaz de línea de comandos amigable.
 
-##🎯 Tipos de Tokens Reconocidos:
+## 🎯 Tipos de Tokens Reconocidos:
 
 1.EMAIL: Direcciones de correo electrónico válidas,
 2.IDENTIFIER: Identificadores de variables (comienzan con letra o guión bajo),
@@ -23,11 +23,11 @@ Sistema de validación de patrones en cadenas de texto utilizando expresiones re
 7.ARITHMETIC_OPERATOR: Operadores aritméticos (+, -, *, /, %, **),
 8.RELATIONAL_OPERATOR: Operadores relacionales (==, !=, <, >, <=, >=)
 
-##📋 Requisitos
+## 📋 Requisitos
 -Python 3.6 o superior
 -No se requieren librerías externas (utiliza sólo módulos estándar de Python)
 
-##🔧 Instalación
+## 🔧 Instalación
 bash
 # Clona o descarga el repositorio
 git clone https://github.com/blosttt/taller1-info1148.git
@@ -35,7 +35,7 @@ git clone https://github.com/blosttt/taller1-info1148.git
 cd taller1-info1148
 El proyecto no requiere instalación adicional.
 
-##🚀 Uso:
+## 🚀 Uso:
 
 Modo archivo:
 Procesa un archivo de texto con tokens (uno por línea):
@@ -64,7 +64,7 @@ print(resultado)  # Output: True (EMAIL)
 
 tokens = validator.process_file("tokens.txt")
 
-##📁 Estructura del Proyecto
+## 📁 Estructura del Proyecto
 
 taller1-info1148/
 ├── token_validator.py  # Código principal del validador
@@ -72,7 +72,7 @@ taller1-info1148/
 ├── README.md           # Este archivo
 └── requirements.txt    # Dependencias (vacío o con librerías si se añaden)
 
-##🧩 Expresiones Regulares Implementadas:
+## 🧩 Expresiones Regulares Implementadas:
 1.EMAIL: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$,
 2.IDENTIFIER: ^[a-zA-Z_][a-zA-Z0-9_]*$,
 3.NUMBER: ^-?\d+(\.\d+)?$,
@@ -82,7 +82,7 @@ taller1-info1148/
 7.ARITHMETIC_OPERATOR: ^(\+|-|\*|/|%|\*\*)$,
 8.RELATIONAL_OPERATOR: ^(==|!=|<|>|<=|>=)$,
 
-##📝 Formato del Archivo de Entrada:
+## 📝 Formato del Archivo de Entrada:
 El archivo de entrada debe ser un archivo de texto plano con un token por línea:
 usuario@example.com
 12345
@@ -92,7 +92,7 @@ if
 ==.
 
 
-##🔧 Personalización:
+## 🔧 Personalización:
 
 Para agregar nuevos tipos de tokens, modifica el diccionario patterns en la clase TokenValidator:
 
@@ -101,16 +101,16 @@ self.patterns = {
     # ... otros tokens
 }
 
-##🧪 Pruebas:
+## 🧪 Pruebas:
 El proyecto incluye un archivo tokens.txt con más de 70 ejemplos de tokens válidos e inválidos para pruebas. Se recomienda verificar el funcionamiento con este archivo antes de usar el validador con datos propios.
 
-##⚠️ Limitaciones:
+## ⚠️ Limitaciones:
 Las expresiones regulares para contraseñas y correos electrónicos pueden no cubrir todos los casos posibles según estándares actualizados,
 
 El rendimiento puede disminuir con archivos muy grandes (>10,000 tokens),
 
 No se soportan tokens multi-línea,
 
-##👥 Autor
+## 👥 Autor
 Desarrollado por Benjmain Sobarzo, Kevin Cortes, Jonthan Huinca para el Taller 1 de INFO1148 - Teoría de la Computación, Semestre II-2025.
 
