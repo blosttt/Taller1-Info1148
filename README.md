@@ -1,4 +1,4 @@
-#Validador de Tokens con Expresiones Regulares
+#/Validador de Tokens con Expresiones Regulares
 
 #Descripción:
 
