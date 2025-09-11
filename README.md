@@ -6,21 +6,21 @@ Sistema de validación de patrones en cadenas de texto utilizando expresiones re
 
 ✨ Características:
 
--✅ Validación de 8 tipos diferentes de tokens mediante expresiones regulares
--📁 Procesamiento de archivos de texto con múltiples tokens
--💻 Modo interactivo para validación individual
--📊 Reportes estadísticos de validación
--🖥️ Interfaz de línea de comandos amigable
+-✅ Validación de 8 tipos diferentes de tokens mediante expresiones regulares,
+-📁 Procesamiento de archivos de texto con múltiples tokens,
+-💻 Modo interactivo para validación individual,
+-📊 Reportes estadísticos de validación,
+-🖥️ Interfaz de línea de comandos amigable.
 
 🎯 Tipos de Tokens Reconocidos:
 
-1.EMAIL: Direcciones de correo electrónico válidas
-2.IDENTIFIER: Identificadores de variables (comienzan con letra o guión bajo)
-3.NUMBER: Números enteros y decimales con signo opcional
-4.PASSWORD: Contraseñas seguras (8+ caracteres, mayúscula, minúscula, número y carácter especial)
-5.RESERVED_WORD: Palabras reservadas (if, else, while, for, return)
-6.LOGICAL_OPERATOR: Operadores lógicos (&&, ||, !)
-7.ARITHMETIC_OPERATOR: Operadores aritméticos (+, -, *, /, %, **)
+1.EMAIL: Direcciones de correo electrónico válidas,
+2.IDENTIFIER: Identificadores de variables (comienzan con letra o guión bajo),
+3.NUMBER: Números enteros y decimales con signo opcional,
+4.PASSWORD: Contraseñas seguras (8+ caracteres, mayúscula, minúscula, número y carácter especial),
+5.RESERVED_WORD: Palabras reservadas (if, else, while, for, return),
+6.LOGICAL_OPERATOR: Operadores lógicos (&&, ||, !),
+7.ARITHMETIC_OPERATOR: Operadores aritméticos (+, -, *, /, %, **),
 8.RELATIONAL_OPERATOR: Operadores relacionales (==, !=, <, >, <=, >=)
 
 📋 Requisitos
