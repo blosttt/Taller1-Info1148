@@ -6,11 +6,11 @@ Sistema de validación de patrones en cadenas de texto utilizando expresiones re
 
 ## ✨ Características:
 
--✅ Validación de 8 tipos diferentes de tokens mediante expresiones regulares,
--📁 Procesamiento de archivos de texto con múltiples tokens,
--💻 Modo interactivo para validación individual,
--📊 Reportes estadísticos de validación,
--🖥️ Interfaz de línea de comandos amigable.
+- ✅ Validación de 8 tipos diferentes de tokens mediante expresiones regulares,
+- 📁 Procesamiento de archivos de texto con múltiples tokens,
+- 💻 Modo interactivo para validación individual,
+- 📊 Reportes estadísticos de validación,
+- 🖥️ Interfaz de línea de comandos amigable.
 
 ## 🎯 Tipos de Tokens Reconocidos:
 
