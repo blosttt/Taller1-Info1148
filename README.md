@@ -14,18 +14,18 @@ Sistema de validación de patrones en cadenas de texto utilizando expresiones re
 
 ## 🎯 Tipos de Tokens Reconocidos:
 
-1.EMAIL: Direcciones de correo electrónico válidas,
-2.IDENTIFIER: Identificadores de variables (comienzan con letra o guión bajo),
-3.NUMBER: Números enteros y decimales con signo opcional,
-4.PASSWORD: Contraseñas seguras (8+ caracteres, mayúscula, minúscula, número y carácter especial),
-5.RESERVED_WORD: Palabras reservadas (if, else, while, for, return),
-6.LOGICAL_OPERATOR: Operadores lógicos (&&, ||, !),
-7.ARITHMETIC_OPERATOR: Operadores aritméticos (+, -, *, /, %, **),
-8.RELATIONAL_OPERATOR: Operadores relacionales (==, !=, <, >, <=, >=)
+1. EMAIL: Direcciones de correo electrónico válidas,
+2. IDENTIFIER: Identificadores de variables (comienzan con letra o guión bajo),
+3. NUMBER: Números enteros y decimales con signo opcional,
+4. PASSWORD: Contraseñas seguras (8+ caracteres, mayúscula, minúscula, número y carácter especial),
+5. RESERVED_WORD: Palabras reservadas (if, else, while, for, return),
+6. LOGICAL_OPERATOR: Operadores lógicos (&&, ||, !),
+7. ARITHMETIC_OPERATOR: Operadores aritméticos (+, -, *, /, %, **),
+8. RELATIONAL_OPERATOR: Operadores relacionales (==, !=, <, >, <=, >=)
 
 ## 📋 Requisitos
--Python 3.6 o superior
--No se requieren librerías externas (utiliza sólo módulos estándar de Python)
+- Python 3.6 o superior
+- No se requieren librerías externas (utiliza sólo módulos estándar de Python)
 
 ## 🔧 Instalación
 bash
@@ -50,9 +50,9 @@ bash:
 python token_validator.py
 Opciones disponibles:
 
-1.Validar un archivo de texto
-2.Validar un token individual
-3.Salir
+1. Validar un archivo de texto
+2. Validar un token individual
+3. Salir
 
 Ejemplos de uso
 # Ejemplo de uso directo desde Python
@@ -73,14 +73,14 @@ taller1-info1148/
 └── requirements.txt    # Dependencias (vacío o con librerías si se añaden)
 
 ## 🧩 Expresiones Regulares Implementadas:
-1.EMAIL: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$,
-2.IDENTIFIER: ^[a-zA-Z_][a-zA-Z0-9_]*$,
-3.NUMBER: ^-?\d+(\.\d+)?$,
-4.PASSWORD: ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$,
-5.RESERVED_WORD: ^(if|else|while|for|return)$,
-6.LOGICAL_OPERATOR: ^(&&|\|\||!)$,
-7.ARITHMETIC_OPERATOR: ^(\+|-|\*|/|%|\*\*)$,
-8.RELATIONAL_OPERATOR: ^(==|!=|<|>|<=|>=)$,
+1. EMAIL: ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$,
+2. IDENTIFIER: ^[a-zA-Z_][a-zA-Z0-9_]*$,
+3. NUMBER: ^-?\d+(\.\d+)?$,
+4. PASSWORD: ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$,
+5. RESERVED_WORD: ^(if|else|while|for|return)$,
+6. LOGICAL_OPERATOR: ^(&&|\|\||!)$,
+7. ARITHMETIC_OPERATOR: ^(\+|-|\*|/|%|\*\*)$,
+8. RELATIONAL_OPERATOR: ^(==|!=|<|>|<=|>=)$,
 
 ## 📝 Formato del Archivo de Entrada:
 El archivo de entrada debe ser un archivo de texto plano con un token por línea:
