@@ -1,10 +1,10 @@
 Validador de Tokens con Expresiones Regulares
 
-Descripción
+Descripción:
 
 Sistema de validación de patrones en cadenas de texto utilizando expresiones regulares en Python. El sistema es capaz de identificar y clasificar diferentes tipos de tokens como correos electrónicos, identificadores, números, contraseñas, palabras reservadas y operadores.
 
-✨ Características
+✨ Características:
 
 -✅ Validación de 8 tipos diferentes de tokens mediante expresiones regulares
 -📁 Procesamiento de archivos de texto con múltiples tokens
@@ -12,7 +12,7 @@ Sistema de validación de patrones en cadenas de texto utilizando expresiones re
 -📊 Reportes estadísticos de validación
 -🖥️ Interfaz de línea de comandos amigable
 
-🎯 Tipos de Tokens Reconocidos
+🎯 Tipos de Tokens Reconocidos:
 
 1.EMAIL: Direcciones de correo electrónico válidas
 2.IDENTIFIER: Identificadores de variables (comienzan con letra o guión bajo)
