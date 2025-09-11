@@ -7,15 +7,14 @@ class TokenValidator:
         # Expresiones regulares para cada tipo de token
         self.patterns = {
             'EMAIL': r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$',
+            'RESERVED_WORD': r'^(if|else|while|for|return)$',
+            'PASSWORD': r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$',
             'IDENTIFIER': r'^[a-zA-Z_][a-zA-Z0-9_]*$',
             'NUMBER': r'^-?\d+(\.\d+)?$',
-            'PASSWORD': r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$',
-            'RESERVED_WORD': r'^(if|else|while|for|return)$',
             'LOGICAL_OPERATOR': r'^(&&|\|\||!)$',
             'ARITHMETIC_OPERATOR': r'^(\+|-|\*|/|%|\*\*)$',
             'RELATIONAL_OPERATOR': r'^(==|!=|<|>|<=|>=)$'
         }
-        
         # Compilar las expresiones regulares para mejor rendimiento
         self.compiled_patterns = {}
         for token_type, pattern in self.patterns.items():
